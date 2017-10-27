@@ -14,12 +14,12 @@ describe('Fundamentals #1', function() {
   catch(e) {
     console.log(e)
   }
-  it('foods is an array', function() {
-    expect(foods).to.be.an('array')
+  it('colors is an array', function() {
+    expect(colors).to.be.an('array')
   })
-  it('foods contains three strings', function() {
-    expect(foods.length).to.equal(3)
-    expect(foods.every(food => food.constructor === String)).to.equal(true)
+  it('colors contains three strings', function() {
+    expect(colors.length).to.equal(3)
+    expect(colors.every(color => color.constructor === String)).to.equal(true)
   })
 })
 
@@ -34,11 +34,11 @@ describe('Fundamentals #2', function() {
   catch(e) {
     console.log(e)
   }
-  it('last is a string', function() {
-    expect(last).to.be.a('string')
+  it('lastColor is a string', function() {
+    expect(lastColor).to.be.a('string')
   })
-  it('last is equal to the last item in foods', function() {
-    expect(last).to.equal(foods[2])
+  it('lastColor is equal to the last item in colors', function() {
+    expect(lastColor).to.equal(colors[2])
   })
 })
 
@@ -53,11 +53,11 @@ describe('Fundamentals #3', function() {
   catch(e) {
     console.log(e)
   }
-  it('favoriteFoods is defined', function() {
-    expect(favoriteFoods).to.be.not.undefined
+  it('favoriteColors is defined', function() {
+    expect(favoriteColors).to.be.not.undefined
   })
-  it('favoriteFoods is an array', function() {
-    expect(favoriteFoods).to.be.an('array')
+  it('favoriteColors is an array', function() {
+    expect(favoriteColors).to.be.an('array')
   })
 })
 
@@ -78,14 +78,14 @@ describe('Fundamentals #4', function() {
   catch(e) {
     console.log(e)
   }
-  it('favoriteFoods contains three foods', function() {
-    expect(favoriteFoods.length).to.equal(3)
+  it('favoriteColors contains three colors', function() {
+    expect(favoriteColors.length).to.equal(3)
   })
-  it('favoriteFoods contains the same values as foods', function() {
+  it('favoriteColors contains the same values as colors', function() {
     expect(
-      favoriteFoods.reduce((a, b) => a + b)
+      favoriteColors.reduce((a, b) => a + b)
     ).to.equal(
-      foods.reduce((a, b) => a + b)
+      colors.reduce((a, b) => a + b)
     )
   })
 })
@@ -101,14 +101,14 @@ describe('Fundamentals #5', function() {
   catch(e) {
     console.log(e)
   }
-  it('instructor is an object', function() {
-    expect(instructor).to.be.an('object')
+  it('student is an object', function() {
+    expect(student).to.be.an('object')
   })
-  it('instructor has three key-value pairs', function() {
-    expect(Object.keys(instructor)).to.have.lengthOf(3)
+  it('student has three key-value pairs', function() {
+    expect(Object.keys(student)).to.have.lengthOf(3)
   })
-  it('instructor does not have a \'has-office-hours\' property', function() {
-    expect(instructor).to.not.have.any.keys('has-office-hours')
+  it('student does not have a \'attends-office-hours\' property', function() {
+    expect(student).to.not.have.any.keys('attends-office-hours')
   })
 })
 
@@ -122,13 +122,13 @@ describe('Fundamentals #6', function() {
   catch(e) {
     console.log(e)
   }
-  it('instructor has four key-value pairs', function() {
-    expect(Object.keys(instructor).length).to.be.equal(4)
+  it('student has four key-value pairs', function() {
+    expect(Object.keys(student).length).to.be.equal(4)
   })
-  it('instructor has a has-office-hours property', function() {
-    expect(instructor).to.have.property('has-office-hours')
+  it('student has a attends-office-hours property', function() {
+    expect(student).to.have.property('attends-office-hours')
   })
-  it('has-office-hours has a boolean value', function() {
-    expect(instructor).property('has-office-hours').to.be.a('boolean')
+  it('attends-office-hours has a boolean value', function() {
+    expect(student).property('attends-office-hours').to.be.a('boolean')
   })
 })
