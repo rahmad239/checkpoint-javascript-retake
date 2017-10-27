@@ -14,15 +14,15 @@ describe('HOF #1', function() {
   catch(e) {
     console.log(e)
   }
-  it('peopleNames should be an array', function() {
-    expect(peopleNames).to.be.an('array')
+  it('peopleAges should be an array', function() {
+    expect(peopleAges).to.be.an('array')
   })
   it('.map should be called on `people`', function() {
     expect(hof).to.include('people.map')
   })
-  it('peopleNames should contain the names of each person in the people array', function() {
-    let names = ["Layla", "Keanu", "Jasmine"]
-    expect(peopleNames).to.deep.equal(names)
+  it('peopleAges should contain the age of each person in the people array', function() {
+    let ages = [27, 54, 35]
+    expect(peopleAges).to.deep.equal(ages)
   })
 })
 
@@ -42,14 +42,14 @@ describe('HOF #2', function() {
   catch(e) {
     console.log(e)
   }
-  it('polyglotPeople is an array', function() {
-    expect(polyglotPeople).to.be.an('array')
+  it('wdiStudents is an array', function() {
+    expect(wdiStudents).to.be.an('array')
   })
   it('.filter should be called on `people`', function() {
     expect(hof).to.include('people.filter')
   })
-  it('polyglotPeople only contains persons who know multiple languages', function() {
-    let expectedPeople = people.filter((v,i) => i!==1)
-    expect(polyglotPeople).to.deep.equal(expectedPeople)
+  it('wdiStudents only contains persons who are in WDI', function() {
+    let expectedPeople = people.filter((v,i) => i!==2)
+    expect(wdiStudents).to.deep.equal(expectedPeople)
   })
 })

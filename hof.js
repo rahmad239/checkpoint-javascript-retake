@@ -4,26 +4,26 @@ var people = [
   {
     name: "Layla",
     age: 27,
-    knownLanguages: 3
+    course: 'WDI'
   }, {
     name: "Keanu",
     age: 54,
-    knownLanguages: 1
+    course: 'WDI'
   }, {
     name: "Jasmine",
     age: 35,
-    knownLanguages: 2
+    course: 'DSI'
   }
 ]
 
-// #1: Use the `map` array method to create a new array containing the names of each
+// #1: Use the `map` array method to create a new array containing the ages of each
 // person in the `people` array. Assign the returned array to a variable
-// called `peopleNames`.
+// called `peopleAges`.
 // Type your solution immediately below this line:
 
 
 
 // #2: Use the `filter` array method to create a new, filtered array containing only
-// persons from the `people` array who know multiple languages. Assign the returned array
-// to a variable called `polyglotPeople`.
+// persons from the `people` array who are WDI students. Assign the returned array
+// to a variable called `wdiStudents`.
 // Type your solution immediately below this line:
