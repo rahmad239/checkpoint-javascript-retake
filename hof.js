@@ -20,11 +20,15 @@ var people = [
 // person in the `people` array. Assign the returned array to a variable
 // called `peopleAges`.
 // Type your solution immediately below this line:
-var peopleAges = .map(people.age)
+var peopleAges = people.map(people.age)
 
 
 // #2: Use the `filter` array method to create a new, filtered array containing only
 // persons from the `people` array who are WDI students. Assign the returned array
 // to a variable called `wdiStudents`.
 // Type your solution immediately below this line:
-var wdiStudents = .filter(people, coarse = wdi )
+var wdiStudents[] = .filter(people, coarse = "wdi" ) => {
+  wdiStudents[]
+}
+
+
